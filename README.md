@@ -1,4 +1,4 @@
-# USTGCN_DHAKA
+# Dhaka USTGCN
 
 ## Abstract
 
