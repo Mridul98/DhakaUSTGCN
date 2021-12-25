@@ -1,0 +1,4 @@
+pred upto 15 minutes (trainset = [ nov,dec]) cluster 2 ustgcn and normal ustgcn
+from tier 1 --> road 15
+from tier 2 --> road 80
+(for now these two roads are enough)

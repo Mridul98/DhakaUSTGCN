@@ -1,0 +1,36 @@
+{   "data_resampling_method" : "mean",
+    "train_test" :{
+        
+        "train_days" : [[1,31],[1,32]],
+        "test_days" : [[1,32]]
+    },
+
+    "dataset_paths" :{
+
+        "model_data_paths" : [
+            "datasets/november_final.csv",
+            "datasets/december_final.csv",
+            "datasets/january_2020_final.csv"
+            
+        ],
+
+        "tier_info_path" : "datasets/cluster_tier.xlsx",
+        "tier_column_name" : "2_cluster" 
+
+    },
+    "model_parameters": {
+        
+        "learning_rate" : 0.0001,
+        "gnn_layers" : 4,
+        "input_size" : 8,
+        "output_size" : 8,
+        "epoch": 200,
+        "cuda" : true,
+        "seed" : 824,
+        "number_of_timestamps" : 12,
+        "prediction_length" : 3,
+        "trained_model" : true
+       
+    }
+
+}
