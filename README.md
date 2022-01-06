@@ -21,3 +21,5 @@ prediction results are compared with the original USTGCN framework and we have e
 performance degradation in terms of sparsity of the datasets with which the USTGCN models are trained on.
 
 
+![modified_ustgcn_diagram](ustgcn_diagram.png)
+
