@@ -1,5 +1,7 @@
 # Traffic Forecasting Using Modified USTGCN (A case study in dhaka)
 
+### Traffic forecasting result can be found under the directories starting with 'plot_pred'
+
 ## Abstract
 
 Deep learning models for traffic forecasting have gained a lot of success in recent years. The most important 
@@ -24,4 +26,4 @@ performance degradation in terms of sparsity of the datasets with which the USTG
 ![modified_ustgcn_diagram](ustgcn_diagram.png)
 
 
-### Traffic forecasting result can be found under the directories starting with 'plot_pred'
+
