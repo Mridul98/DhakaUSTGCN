@@ -1,4 +1,4 @@
-# Dhaka USTGCN
+# Traffic Forecasting Using Modified USTGCN (A case study in dhaka)
 
 ## Abstract
 
@@ -23,3 +23,5 @@ performance degradation in terms of sparsity of the datasets with which the USTG
 
 ![modified_ustgcn_diagram](ustgcn_diagram.png)
 
+
+### Traffic forecasting result can be found under the directories starting with 'plot_pred'
