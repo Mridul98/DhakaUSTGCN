@@ -26,4 +26,6 @@ performance degradation in terms of sparsity of the datasets with which the USTG
 ![modified_ustgcn_diagram](ustgcn_diagram.png)
 
 
+## Traffic jam prediction sample
 
+![modified_ustgcn_diagram](plot_pred_15_ustgcn_4_cluster_nov_pred_after_15/prediction_after_15_minutes_Road_0_tier_1_day_23.png)
