@@ -24,9 +24,7 @@ class SPTempGNN(nn.Module):
         #### alternative implementation
         self.his_temporal_weight_tier_one = nn.Parameter(torch.FloatTensor(1,out_size))
         self.his_temporal_weight_tier_two = nn.Parameter(torch.FloatTensor(1,out_size))
-        self.his_temporal_weight_tier_three = nn.Parameter(torch.FloatTensor(1,out_size))
-        self.his_temporal_weight_tier_four = nn.Parameter(torch.FloatTensor(1,out_size))
-
+  
         self.mixed_weights = self.create_mixed_weights()
         #### alternative implementation finished
 
@@ -71,23 +69,23 @@ class SPTempGNN(nn.Module):
 
 
         # ### uncomment next line when using tier conditioning
-        # his_temporal = self.create_mixed_weights().repeat(12,1) * his_raw_features
+        his_temporal = self.create_mixed_weights().repeat(12,1) * his_raw_features
 
-        # his_temporal = torch.mm(self.sp_temp,his_temporal)
+        his_temporal = torch.mm(self.sp_temp,his_temporal)
 
-        # his_self_aggregated = his_self.mm(self.his_final_weight_self)
+        his_self_aggregated = his_self.mm(self.his_final_weight_self)
 
-        # his_temporal_aggregated = his_temporal.mm(self.his_final_weight_sptemp)
+        his_temporal_aggregated = his_temporal.mm(self.his_final_weight_sptemp)
 
-        # his_combined = torch.cat([his_self_aggregated,his_temporal_aggregated], dim=1)
+        his_combined = torch.cat([his_self_aggregated,his_temporal_aggregated], dim=1)
         # #######
 
 
 
         ### this section is for normal ustgcn
-        his_temporal = self.his_temporal_weight.repeat(self.tot_nodes,1) * his_raw_features
-        his_temporal = torch.mm(self.sp_temp,his_temporal)
-        his_combined = torch.cat([his_self,his_temporal], dim=1)
+        # his_temporal = self.his_temporal_weight.repeat(self.tot_nodes,1) * his_raw_features
+        # his_temporal = torch.mm(self.sp_temp,his_temporal)
+        # his_combined = torch.cat([his_self,his_temporal], dim=1)
         ####
         
         his_raw_features =F.relu(his_combined.mm(self.his_final_weight))
