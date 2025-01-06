@@ -2,3 +2,4 @@ datasets/november_final.csv filter=lfs diff=lfs merge=lfs -text
 datasets/december_final.csv filter=lfs diff=lfs merge=lfs -text
 datasets/february-2020_final.csv filter=lfs diff=lfs merge=lfs -text
 datasets/january_2020_final.csv filter=lfs diff=lfs merge=lfs -text
+datasets/*.csv filter=lfs diff=lfs merge=lfs -text

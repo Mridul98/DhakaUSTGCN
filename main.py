@@ -105,10 +105,4 @@ if __name__ == '__main__':
     else:
         print('running_trained_model')
         pred,label,idx = traffic_model.run_Trained_Model()
-
-        # for result generation
-        produce_all(14,pred,label,'january_normal_pred_after_15_14')
-
-       
-
  
